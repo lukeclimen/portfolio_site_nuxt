@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { appName } = useAppConfig()
+const { appName } = useAppConfig();
 
 defineProps({
   isText: {
@@ -10,7 +10,7 @@ defineProps({
     type: Number,
     default: 6,
   },
-})
+});
 </script>
 
 <template>
@@ -19,15 +19,12 @@ defineProps({
     class="flex shrink-0 items-center"
     aria-label="Go back to home page"
   >
-    <SvgoMaisonHochard
+    <SvgoLukeClimenhage
       class="block w-auto"
       :class="size ? 'h-' + size : 'h-6'"
       :font-controlled="false"
     />
-    <span
-      v-if="isText"
-      class="ml-1 text-xs font-semibold"
-    >
+    <span v-if="isText" class="ml-1 text-xs font-semibold">
       {{ appName }}
     </span>
   </NuxtLink>
