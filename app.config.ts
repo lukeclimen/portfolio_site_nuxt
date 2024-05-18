@@ -1,7 +1,7 @@
 export default defineAppConfig({
   appName: 'Portfolio site for Luke Climenhage',
   appDescription: 'Portfolio site created with from the Canvas template, built by HugoRCD',
-  profilePicture: '/assets/hugo-richard-light.webp',
+  profilePicture: '/assets/luke-climenhage.webp',
   footerName: 'Luke Climenhage',
   email: 'contact@lukeclimenhage.com',
   socials: {
