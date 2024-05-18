@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import type { ContactEmail } from '~/types/ContactEmail'
+import type { ContactEmail } from "~/types/ContactEmail";
 
-const appConfig = useAppConfig()
-const { t } = useI18n()
+const appConfig = useAppConfig();
+const { t } = useI18n();
 
-const email = ref('')
-const message = ref('')
-const phone = ref('')
-const fullname = ref('')
-const subject = ref('')
+const email = ref("");
+const message = ref("");
+const phone = ref("");
+const fullname = ref("");
+const subject = ref("");
 
-const loading = ref(false)
+const loading = ref(false);
 
 const contactData = computed(() => {
   return {
@@ -19,35 +19,34 @@ const contactData = computed(() => {
     phone: phone.value,
     fullname: fullname.value,
     subject: subject.value,
-  } as ContactEmail
-})
+  } as ContactEmail;
+});
 
 async function submitForm() {
-  loading.value = true
+  loading.value = true;
   try {
-    await $fetch('/api/sendEmail', {
-      method: 'POST',
+    await $fetch("/api/sendEmail", {
+      method: "POST",
       body: contactData.value,
-    })
-    email.value = ''
-    message.value = ''
-    phone.value = ''
-    fullname.value = ''
-    subject.value = ''
-    toast.success(t('contact.success'))
+    });
+    email.value = "";
+    message.value = "";
+    phone.value = "";
+    fullname.value = "";
+    subject.value = "";
+    toast.success(t("contact.success"));
+  } catch (error) {
+    toast.error(t("contact.error"));
   }
-  catch (error) {
-    toast.error(t('contact.error'))
-  }
-  loading.value = false
+  loading.value = false;
 }
-
-defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'Home image' })
 </script>
 
 <template>
   <section class="mx-auto mt-4 flex max-w-4xl flex-col p-7 sm:mt-20">
-    <h1 class="font-testimonial text-white-shadow text-center text-4xl font-bold">
+    <h1
+      class="font-testimonial text-white-shadow text-center text-4xl font-bold"
+    >
       <ContentSlot :use="$slots.title" />
     </h1>
     <h2 class="text-center text-lg font-light italic text-muted">
@@ -60,10 +59,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         @submit.prevent="submitForm"
       >
         <!-- Fullname -->
-        <UFormGroup
-          label="Fullname"
-          required
-        >
+        <UFormGroup label="Fullname" required>
           <UInput
             id="full-name"
             v-model="fullname"
@@ -77,10 +73,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         </UFormGroup>
 
         <!-- Email -->
-        <UFormGroup
-          label="Email"
-          required
-        >
+        <UFormGroup label="Email" required>
           <UInput
             id="email"
             v-model="email"
@@ -94,9 +87,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         </UFormGroup>
 
         <!-- Phone -->
-        <UFormGroup
-          label="Phone"
-        >
+        <UFormGroup label="Phone">
           <UInput
             id="phone"
             v-model="phone"
@@ -109,10 +100,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         </UFormGroup>
 
         <!-- Subject -->
-        <UFormGroup
-          label="Subject"
-          required
-        >
+        <UFormGroup label="Subject" required>
           <UInput
             id="subject"
             v-model="subject"
@@ -124,10 +112,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         </UFormGroup>
 
         <!-- Message -->
-        <UFormGroup
-          label="Message"
-          required
-        >
+        <UFormGroup label="Message" required>
           <UTextarea
             id="message"
             v-model="message"
@@ -152,26 +137,19 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
         </div>
       </form>
       <Divider class="my-10" />
-      <div class="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
+      <div
+        class="flex w-full flex-col items-center justify-between gap-4 sm:flex-row"
+      >
         <div class="flex flex-col gap-3">
           <dd class="flex items-center gap-3 text-gray-400">
-            <span
-              class="i-heroicons-phone size-6"
-              aria-hidden="true"
-            />
+            <span class="i-heroicons-phone size-6" aria-hidden="true" />
             <span>
               {{ appConfig.phone }}
             </span>
           </dd>
           <dd class="flex items-center gap-3 text-gray-400">
-            <span
-              class="i-heroicons-envelope size-6"
-              aria-hidden="true"
-            />
-            <UTooltip
-              :text="$t('global.email')"
-              :shortcuts="['⌘', 'O']"
-            >
+            <span class="i-heroicons-envelope size-6" aria-hidden="true" />
+            <UTooltip :text="$t('global.email')" :shortcuts="['⌘', 'O']">
               <NuxtLink
                 :to="`mailto:${appConfig.email}`"
                 class="cursor-pointer transition-colors duration-300 hover:text-main"

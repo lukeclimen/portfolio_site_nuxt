@@ -1,12 +1,9 @@
 export default defineAppConfig({
-  appName: 'Canvas a Nuxt portfolio template',
-  appDescription: 'Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD',
+  appName: 'Portfolio site for Luke Climenhage',
+  appDescription: 'Portfolio site created with from the Canvas template, built by HugoRCD',
   profilePicture: '/assets/hugo-richard-light.webp',
-  footerName: 'HugoRCD',
-  email: 'contact@hrcd.fr',
-  twitterUsername: '@HugoRCD__',
-  phone: '(+33) 6 21 56 22 18',
-  openGraphImage: 'https://canvas.hrcd.fr/social-preview.jpg',
+  footerName: 'Luke Climenhage',
+  email: 'contact@lukeclimenhage.com',
   socials: {
     github: 'https://github.com/lukeclimen',
     linkedin: 'https://www.linkedin.com/in/lclimenh',
