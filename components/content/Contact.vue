@@ -136,33 +136,6 @@ async function submitForm() {
           </UButton>
         </div>
       </form>
-      <Divider class="my-10" />
-      <div
-        class="flex w-full flex-col items-center justify-between gap-4 sm:flex-row"
-      >
-        <div class="flex flex-col gap-3">
-          <dd class="flex items-center gap-3 text-gray-400">
-            <span class="i-heroicons-phone size-6" aria-hidden="true" />
-            <span>
-              {{ appConfig.phone }}
-            </span>
-          </dd>
-          <dd class="flex items-center gap-3 text-gray-400">
-            <span class="i-heroicons-envelope size-6" aria-hidden="true" />
-            <UTooltip :text="$t('global.email')" :shortcuts="['⌘', 'O']">
-              <NuxtLink
-                :to="`mailto:${appConfig.email}`"
-                class="cursor-pointer transition-colors duration-300 hover:text-main"
-              >
-                {{ appConfig.email }}
-              </NuxtLink>
-            </UTooltip>
-          </dd>
-        </div>
-        <div>
-          <MeetingButton />
-        </div>
-      </div>
     </div>
   </section>
 </template>
