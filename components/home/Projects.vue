@@ -1,15 +1,7 @@
-<script setup lang="ts">
-const { locale } = useI18n()
-
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').locale(locale.value).sort({ release: -1 }).find(), {
-  watch: [locale],
-})
-</script>
-
 <template>
   <div class="flex w-full flex-col gap-6">
     <h3 class="font-testimonial text-white-shadow text-xl font-bold">
-      {{ $t("navigation.works") }}
+      {{ $t("navigation.timeline") }}
     </h3>
     <div class="flex w-full flex-col gap-4">
       <NuxtLink
@@ -26,16 +18,33 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
         </span>
         <div class="mx-2 h-[0.1px] w-full bg-muted" />
         <span class="whitespace-nowrap text-muted">
-          {{ project.release === "soon" ? $t("global.soon") + "..." : project.release }}
+          {{
+            project.release === "soon"
+              ? $t("global.soon") + "..."
+              : project.release
+          }}
         </span>
       </NuxtLink>
     </div>
-    <div @click="useRouter().push('/works')">
+    <div @click="useRouter().push('/projects')">
       <span class="font-testimonial text-white-shadow cursor-pointer text-sm">
         {{ $t("global.see_more") }}
       </span>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const { locale } = useI18n();
+
+const { data: projects } = await useAsyncData(
+  "projects",
+  () =>
+    queryContent("/projects").locale(locale.value).sort({ release: -1 }).find(),
+  {
+    watch: [locale],
+  }
+);
+</script>
 
 <style scoped></style>

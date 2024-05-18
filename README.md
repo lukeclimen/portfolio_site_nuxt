@@ -82,15 +82,15 @@ First check the `app.config.ts` file to change the global configuration of the p
 2. Here, you'll find Markdown files for each article. To modify an article, simply open its Markdown file and make your changes.
 3. To add a new article, create a new Markdown file in this directory. The name of the file will be used as the URL slug for the article.
 
-### Works
+### Projects
 
-1. Navigate to the `content/1.works/` directory.
+1. Navigate to the `content/1.projects/` directory.
 2. Here, you'll find Markdown files for each article. To modify an article, simply open its Markdown file and make your changes.
 3. To add a new project, add a new JSON file in this directory.
 
-#### Featured Works
+#### Timeline
 
-To change the featured works on the homepage, simply add the `featured: true` key to front matter of the markdown file.
+To change the timeline on the homepage, simply add the `featured: true` key to front matter of the markdown file.
 
 ### Other Content
 
