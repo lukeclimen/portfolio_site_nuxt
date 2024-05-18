@@ -28,10 +28,11 @@
     "@vueuse/core": "^9.13.0",
     "@vueuse/nuxt": "^9.13.0",
     "automd": "^0.3.7",
-    "eslint": "^9.2.0",
+    "eslint": "^9.3.0",
     "nuxt": "^3.11.2",
     "nuxt-og-image": "^2.2.4",
     "nuxt-svgo": "^3.7.0",
+    "prettier": "^3.2.5",
     "resend": "^0.17.2",
     "sitemap": "^7.1.1"
   },
