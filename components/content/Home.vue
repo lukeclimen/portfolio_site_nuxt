@@ -51,7 +51,7 @@
           <HomeTimeline />
         </div>
         <Divider class="my-9" />
-        <HomeFaq style="--stagger: 6" data-animate />
+        <!-- <HomeFaq style="--stagger: 6" data-animate /> -->
       </div>
     </div>
   </section>
