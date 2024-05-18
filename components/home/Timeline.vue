@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full flex-col gap-6">
     <h3 class="font-testimonial text-white-shadow text-xl font-bold">
-      {{ $t("navigation.timeline") }}
+      Timeline
     </h3>
     <div class="flex w-full flex-col gap-4">
       <NuxtLink
