@@ -1,6 +1,6 @@
 export default defineAppConfig({
-  appName: 'Portfolio site for Luke Climenhage',
-  appDescription: 'Portfolio site created with from the Canvas template, built by HugoRCD',
+  appName: 'Luke Climenhage Portfolio',
+  appDescription: 'Portfolio site created based off the Canvas template, built by HugoRCD',
   profilePicture: '/assets/luke-climenhage.webp',
   footerName: 'Luke Climenhage',
   email: 'contact@lukeclimenhage.com',
