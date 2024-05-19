@@ -11,64 +11,9 @@
       "logo": "SvgoVueColor"
     },
     {
-      "name": "Nest",
-      "link": "https://nestjs.com/",
-      "logo": "SvgoNestColor"
-    },
-    {
       "name": "TailwindCSS",
       "link": "https://tailwindcss.com/",
       "logo": "SvgoTailwindColor"
-    },
-    {
-      "name": "Prisma",
-      "link": "https://www.prisma.io/",
-      "logo": "SvgoPrismaColor"
-    },
-    {
-      "name": "Vercel",
-      "link": "https://vercel.com/",
-      "logo": "SvgoVercel"
-    },
-    {
-      "name": "Linear",
-      "link": "https://linear.app/",
-      "logo": "SvgoLinearColor"
-    },
-    {
-      "name": "Arc",
-      "link": "https://arc.net/",
-      "logo": "SvgoArcColor"
-    },
-    {
-      "name": "Raycast",
-      "link": "https://raycast.com/",
-      "logo": "SvgoRaycastColor"
-    },
-    {
-      "name": "Notion",
-      "link": "https://www.notion.so/",
-      "logo": "SvgoNotionColor"
-    },
-    {
-      "name": "Cron",
-      "link": "https://calendar.cron.com/",
-      "logo": "SvgoCronColor"
-    },
-    {
-      "name": "Spark",
-      "link": "https://sparkmailapp.com/",
-      "logo": "SvgoSparkColor"
-    },
-    {
-      "name": "1Password",
-      "link": "https://1password.com/",
-      "logo": "SvgoOnepasswordColor"
-    },
-    {
-      "name": "Fig",
-      "link": "https://fig.io/",
-      "logo": "SvgoFigColor"
     },
     {
       "name": "Figma",
@@ -76,19 +21,79 @@
       "logo": "SvgoFigmaColor"
     },
     {
-      "name": "Photoshop",
-      "link": "https://www.adobe.com/products/photoshop.html",
-      "logo": "SvgoPhotoshopColor"
+      "name": "Python",
+      "link": "https://python.org/",
+      "logo": "SvgoPython"
     },
     {
-      "name": "Illustrator",
-      "link": "https://www.adobe.com/products/illustrator.html",
-      "logo": "SvgoIllustratorColor"
+      "name": "Azure",
+      "link": "https://tailwindcss.com/",
+      "logo": "SvgoAzure"
     },
     {
-      "name": "Lightroom",
-      "link": "https://www.adobe.com/products/photoshop-lightroom.html",
-      "logo": "SvgoLightroomColor"
+      "name": "Docker",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoDocker"
+    },
+    {
+      "name": "Express",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoExpressjs"
+    },
+    {
+      "name": "FastAPI",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoFastapi"
+    },
+    {
+      "name": "Git",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoGit"
+    },
+    {
+      "name": "GitLab",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoGitlab"
+    },
+    {
+      "name": "Java",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoJava"
+    },
+    {
+      "name": "Javascript",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoJavascript"
+    },
+    {
+      "name": "MongoDB",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoMongodb"
+    },
+    {
+      "name": "NodeJS",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoNodejs"
+    },
+    {
+      "name": "PostgreSQL",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoPostgresql"
+    },
+    {
+      "name": "Postman",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoPostman"
+    },
+    {
+      "name": "React",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoReact"
+    },
+    {
+      "name": "Typescript",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoTypescript"
     }
   ]
 }
