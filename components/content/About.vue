@@ -1,9 +1,3 @@
-<script setup lang="ts">
-const { data: stack } = await useAsyncData("stack", () =>
-  queryContent("/stack").findOne(),
-);
-</script>
-
 <template>
   <section class="mx-auto mt-4 flex max-w-4xl flex-col p-7 sm:mt-20">
     <h1
@@ -31,9 +25,10 @@ const { data: stack } = await useAsyncData("stack", () =>
         <h3 class="text-white-shadow font-testimonial text-3xl font-bold">
           <ContentSlot :use="$slots.stack_title" />
         </h3>
-        <p class="text-sm text-muted">
-          <ContentSlot :use="$slots.stack_description" />
-        </p>
+        <ContentSlot
+          :use="$slots.stack_description"
+          class="text-sm text-muted"
+        />
       </div>
       <div class="flex flex-wrap gap-4 justify-center">
         <AboutStackItem v-for="item in stack!.items" :key="item.name" :item />
@@ -41,3 +36,9 @@ const { data: stack } = await useAsyncData("stack", () =>
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+const { data: stack } = await useAsyncData("stack", () =>
+  queryContent("/stack").findOne(),
+);
+</script>
