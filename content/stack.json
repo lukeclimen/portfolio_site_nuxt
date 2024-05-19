@@ -27,72 +27,72 @@
     },
     {
       "name": "Azure",
-      "link": "https://tailwindcss.com/",
+      "link": "https://azure.microsoft.com/en-ca",
       "logo": "SvgoAzure"
     },
     {
       "name": "Docker",
-      "link": "https://www.figma.com/",
+      "link": "https://www.docker.com/",
       "logo": "SvgoDocker"
     },
     {
       "name": "Express",
-      "link": "https://www.figma.com/",
+      "link": "https://expressjs.com/",
       "logo": "SvgoExpressjs"
     },
     {
       "name": "FastAPI",
-      "link": "https://www.figma.com/",
+      "link": "https://fastapi.tiangolo.com/",
       "logo": "SvgoFastapi"
     },
     {
       "name": "Git",
-      "link": "https://www.figma.com/",
+      "link": "https://git-scm.com/",
       "logo": "SvgoGit"
     },
     {
       "name": "GitLab",
-      "link": "https://www.figma.com/",
+      "link": "https://about.gitlab.com/",
       "logo": "SvgoGitlab"
     },
     {
       "name": "Java",
-      "link": "https://www.figma.com/",
+      "link": "https://www.java.com/",
       "logo": "SvgoJava"
     },
     {
       "name": "Javascript",
-      "link": "https://www.figma.com/",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "logo": "SvgoJavascript"
     },
     {
       "name": "MongoDB",
-      "link": "https://www.figma.com/",
+      "link": "https://www.mongodb.com/",
       "logo": "SvgoMongodb"
     },
     {
       "name": "NodeJS",
-      "link": "https://www.figma.com/",
+      "link": "https://www.nodejs.org/",
       "logo": "SvgoNodejs"
     },
     {
       "name": "PostgreSQL",
-      "link": "https://www.figma.com/",
+      "link": "https://www.postgresql.org/",
       "logo": "SvgoPostgresql"
     },
     {
       "name": "Postman",
-      "link": "https://www.figma.com/",
+      "link": "https://www.postman.com/",
       "logo": "SvgoPostman"
     },
     {
       "name": "React",
-      "link": "https://www.figma.com/",
+      "link": "https://react.dev/",
       "logo": "SvgoReact"
     },
     {
       "name": "Typescript",
-      "link": "https://www.figma.com/",
+      "link": "https://www.typescriptlang.org/",
       "logo": "SvgoTypescript"
     }
   ]
