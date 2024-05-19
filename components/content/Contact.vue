@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { ContactEmail } from "~/types/ContactEmail";
 
-const appConfig = useAppConfig();
 const { t } = useI18n();
 
 const email = ref("");
