@@ -1,99 +1,121 @@
 {
-  "items": [
+  "icons": [
     {
       "name": "Nuxt",
       "link": "https://nuxt.com/",
-      "logo": "SvgoNuxtColor"
+      "logo": "SvgoNuxtColor",
+      "yearStarted": 2024
     },
     {
       "name": "Vue",
       "link": "https://vuejs.org/",
-      "logo": "SvgoVueColor"
+      "logo": "SvgoVueColor",
+      "yearStarted": 2023
     },
     {
       "name": "TailwindCSS",
       "link": "https://tailwindcss.com/",
-      "logo": "SvgoTailwindColor"
+      "logo": "SvgoTailwindColor",
+      "yearStarted": 2023
     },
     {
       "name": "Figma",
       "link": "https://www.figma.com/",
-      "logo": "SvgoFigmaColor"
+      "logo": "SvgoFigmaColor",
+      "yearStarted": 2023
     },
     {
       "name": "Python",
       "link": "https://python.org/",
-      "logo": "SvgoPython"
+      "logo": "SvgoPython",
+      "yearStarted": 2022
     },
     {
       "name": "Azure",
       "link": "https://azure.microsoft.com/en-ca",
-      "logo": "SvgoAzure"
+      "logo": "SvgoAzure",
+      "yearStarted": 2023
     },
     {
       "name": "Docker",
       "link": "https://www.docker.com/",
-      "logo": "SvgoDocker"
+      "logo": "SvgoDocker",
+      "yearStarted": 2023
     },
     {
       "name": "Express",
       "link": "https://expressjs.com/",
-      "logo": "SvgoExpressjs"
+      "logo": "SvgoExpressjs",
+      "yearStarted": 2022,
+      "yearEnded": 2022
     },
     {
       "name": "FastAPI",
       "link": "https://fastapi.tiangolo.com/",
-      "logo": "SvgoFastapi"
+      "logo": "SvgoFastapi",
+      "yearStarted": 2023
     },
     {
       "name": "Git",
       "link": "https://git-scm.com/",
-      "logo": "SvgoGit"
+      "logo": "SvgoGit",
+      "yearStarted": 2021
     },
     {
       "name": "GitLab",
       "link": "https://about.gitlab.com/",
-      "logo": "SvgoGitlab"
+      "logo": "SvgoGitlab",
+      "yearStarted": 2023
     },
     {
       "name": "Java",
       "link": "https://www.java.com/",
-      "logo": "SvgoJava"
+      "logo": "SvgoJava",
+      "yearStarted": 2021
     },
     {
       "name": "Javascript",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      "logo": "SvgoJavascript"
+      "logo": "SvgoJavascript",
+      "yearStarted": 2022
     },
     {
       "name": "MongoDB",
       "link": "https://www.mongodb.com/",
-      "logo": "SvgoMongodb"
+      "logo": "SvgoMongodb",
+      "yearStarted": 2022
     },
     {
       "name": "NodeJS",
       "link": "https://www.nodejs.org/",
-      "logo": "SvgoNodejs"
+      "logo": "SvgoNodejs",
+      "yearStarted": 2022,
+      "yearEnded": 2022
     },
     {
       "name": "PostgreSQL",
       "link": "https://www.postgresql.org/",
-      "logo": "SvgoPostgresql"
+      "logo": "SvgoPostgresql",
+      "yearStarted": 2023
     },
     {
       "name": "Postman",
       "link": "https://www.postman.com/",
-      "logo": "SvgoPostman"
+      "logo": "SvgoPostman",
+      "yearStarted": 2022
     },
     {
       "name": "React",
       "link": "https://react.dev/",
-      "logo": "SvgoReact"
+      "logo": "SvgoReact",
+      "yearStarted": 2022,
+      "yearEnded": 2023
     },
     {
       "name": "Typescript",
       "link": "https://www.typescriptlang.org/",
-      "logo": "SvgoTypescript"
+      "logo": "SvgoTypescript",
+      "yearStarted": 2022
     }
   ]
 }
