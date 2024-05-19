@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { data: stack } = await useAsyncData("stack", () =>
-  queryContent("/stack").findOne()
+  queryContent("/stack").findOne(),
 );
 </script>
 
@@ -20,14 +20,11 @@ const { data: stack } = await useAsyncData("stack", () =>
     >
       <AboutProfilePicture />
       <div class="relative flex flex-col gap-3 sm:ml-4">
-        <h3 class="text-lg text-muted">Intro</h3>
         <div class="flex flex-col gap-4 text-main">
           <ContentSlot :use="$slots.intro" />
         </div>
       </div>
     </div>
-    <Divider class="my-8" />
-    <ContentSlot :use="$slots.experiences" />
     <Divider class="my-8" />
     <div class="flex flex-col gap-3">
       <div class="mb-6 flex flex-col gap-1">
