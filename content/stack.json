@@ -1,27 +1,9 @@
 {
   "icons": [
     {
-      "name": "Nuxt",
-      "link": "https://nuxt.com/",
-      "logo": "SvgoNuxtColor",
-      "yearStarted": 2024
-    },
-    {
       "name": "Vue",
       "link": "https://vuejs.org/",
       "logo": "SvgoVueColor",
-      "yearStarted": 2023
-    },
-    {
-      "name": "TailwindCSS",
-      "link": "https://tailwindcss.com/",
-      "logo": "SvgoTailwindColor",
-      "yearStarted": 2023
-    },
-    {
-      "name": "Figma",
-      "link": "https://www.figma.com/",
-      "logo": "SvgoFigmaColor",
       "yearStarted": 2023
     },
     {
@@ -43,13 +25,6 @@
       "yearStarted": 2023
     },
     {
-      "name": "Express",
-      "link": "https://expressjs.com/",
-      "logo": "SvgoExpressjs",
-      "yearStarted": 2022,
-      "yearEnded": 2022
-    },
-    {
       "name": "FastAPI",
       "link": "https://fastapi.tiangolo.com/",
       "logo": "SvgoFastapi",
@@ -68,29 +43,10 @@
       "yearStarted": 2023
     },
     {
-      "name": "Java",
-      "link": "https://www.java.com/",
-      "logo": "SvgoJava",
-      "yearStarted": 2021
-    },
-    {
       "name": "Javascript",
       "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "logo": "SvgoJavascript",
       "yearStarted": 2022
-    },
-    {
-      "name": "MongoDB",
-      "link": "https://www.mongodb.com/",
-      "logo": "SvgoMongodb",
-      "yearStarted": 2022
-    },
-    {
-      "name": "NodeJS",
-      "link": "https://www.nodejs.org/",
-      "logo": "SvgoNodejs",
-      "yearStarted": 2022,
-      "yearEnded": 2022
     },
     {
       "name": "PostgreSQL",
@@ -103,6 +59,50 @@
       "link": "https://www.postman.com/",
       "logo": "SvgoPostman",
       "yearStarted": 2022
+    },
+    {
+      "name": "MongoDB",
+      "link": "https://www.mongodb.com/",
+      "logo": "SvgoMongodb",
+      "yearStarted": 2022
+    },
+    {
+      "name": "Nuxt",
+      "link": "https://nuxt.com/",
+      "logo": "SvgoNuxtColor",
+      "yearStarted": 2024
+    },
+    {
+      "name": "TailwindCSS",
+      "link": "https://tailwindcss.com/",
+      "logo": "SvgoTailwindColor",
+      "yearStarted": 2023
+    },
+    {
+      "name": "Figma",
+      "link": "https://www.figma.com/",
+      "logo": "SvgoFigmaColor",
+      "yearStarted": 2023
+    },
+    {
+      "name": "Express",
+      "link": "https://expressjs.com/",
+      "logo": "SvgoExpressjs",
+      "yearStarted": 2022,
+      "yearEnded": 2022
+    },
+    {
+      "name": "Java",
+      "link": "https://www.java.com/",
+      "logo": "SvgoJava",
+      "yearStarted": 2021
+    },
+    {
+      "name": "NodeJS",
+      "link": "https://www.nodejs.org/",
+      "logo": "SvgoNodejs",
+      "yearStarted": 2022,
+      "yearEnded": 2022
     },
     {
       "name": "React",
