@@ -9,9 +9,9 @@
         :key="work.name"
         role="link"
         class="flex cursor-pointer items-center gap-2 rounded-lg px-4 py-2 hover:bg-secondary hover:text-main"
-        :to="work.release === 'soon' ? '/' : work.link"
+        :to="work.startDate === 'soon' ? '/' : work.link"
         :aria-label="'go to ' + work.name + ' company website'"
-        :target="work.release === 'soon' ? '_self' : '_blank'"
+        :target="work.startDate === 'soon' ? '_self' : '_blank'"
       >
         <span class="whitespace-nowrap">
           {{ work.name }}
@@ -19,7 +19,9 @@
         <div class="mx-2 h-[0.1px] w-full bg-muted" />
         <span class="whitespace-nowrap text-muted">
           {{
-            work.release === "soon" ? $t("global.soon") + "..." : work.release
+            work.startDate === "soon"
+              ? $t("global.soon") + "..."
+              : work.startDate
           }}
         </span>
       </NuxtLink>
@@ -37,11 +39,10 @@ const { locale } = useI18n();
 
 const { data: workHistory } = await useAsyncData(
   "workHistory",
-  () =>
-    queryContent("/projects").locale(locale.value).sort({ release: -1 }).find(),
+  () => queryContent("/timeline").locale(locale.value).find(),
   {
     watch: [locale],
-  }
+  },
 );
 </script>
 
