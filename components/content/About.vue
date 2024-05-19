@@ -35,7 +35,7 @@ const { data: stack } = await useAsyncData("stack", () =>
           <ContentSlot :use="$slots.stack_description" />
         </p>
       </div>
-      <div class="flex flex-wrap gap-4">
+      <div class="flex flex-wrap gap-4 justify-center">
         <AboutStackItem v-for="item in stack!.items" :key="item.name" :item />
       </div>
     </div>
