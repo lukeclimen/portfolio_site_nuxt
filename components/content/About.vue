@@ -5,9 +5,6 @@
     >
       <ContentSlot :use="$slots.title" />
     </h1>
-    <h2 class="text-center text-lg font-light italic text-muted">
-      <ContentSlot :use="$slots.description" />
-    </h2>
     <Divider class="mb-8 mt-2" />
     <div
       class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
