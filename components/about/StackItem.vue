@@ -1,13 +1,13 @@
 <template>
   <SpotlightCard white class="p-6">
-    <NuxtLink :to="item.link" target="_blank" :aria-label="item.name + ' link'">
+    <NuxtLink :to="icon.link" target="_blank" :aria-label="icon.name + ' link'">
       <component
-        :is="item.logo"
+        :is="icon.logo"
         class="size-8 text-main"
         :font-controlled="false"
-        :alt="item.name + ' logo'"
+        :alt="icon.name + ' logo'"
         :filled="true"
-        :aria-label="item.name + ' logo'"
+        :aria-label="icon.name + ' logo'"
       />
     </NuxtLink>
   </SpotlightCard>
@@ -18,7 +18,7 @@ import type { PropType } from "vue";
 import type { Stack } from "~/data/stack";
 
 defineProps({
-  item: {
+  icon: {
     type: Object as PropType<Stack>,
     required: true,
   },
