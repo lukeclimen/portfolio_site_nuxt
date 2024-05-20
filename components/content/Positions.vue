@@ -10,6 +10,7 @@ defineProps({
         endDate: string;
         employer: string;
         link: string;
+        responsibilities: Array<string>;
       }[]
     >,
     required: true,
@@ -19,7 +20,9 @@ defineProps({
 
 <template>
   <div class="flex flex-col gap-3">
-    <h3 class="text-white-shadow font-testimonial text-3xl font-bold">
+    <h3
+      class="text-white-shadow font-testimonial text-left sm:pl-24 md:pl-32 text-3xl font-bold"
+    >
       Work Experience
     </h3>
     <Divider class="mb-8 mt-2" />
@@ -38,15 +41,24 @@ defineProps({
             <h4>{{ job.endDate }}</h4>
           </div>
         </div>
-        <div class="w-3/4">
+        <div class="w-3/4 flex flex-col">
           <h3 class="font-light text-xl -translate-y-1">
             {{ job.job_title }}
           </h3>
-          <h4 class="mb-4 text-lg font-light italic text-muted -translate-y-1">
+          <h4 class="text-lg font-light italic text-muted -translate-y-1 mb-1">
             <a :href="job.link" target="_blank" class="flex items-center w-fit">
               {{ job.employer }}</a
             >
           </h4>
+          <ul class="ml-4 mr-8 list-disc">
+            <li
+              v-for="(blurb, index) in job.responsibilities"
+              :key="index"
+              class="mb-4 font-medium"
+            >
+              {{ blurb }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
