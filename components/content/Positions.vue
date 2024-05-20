@@ -21,11 +21,10 @@ defineProps({
 <template>
   <div class="flex flex-col gap-3">
     <h3
-      class="text-white-shadow font-testimonial text-left sm:pl-24 md:pl-32 text-3xl font-bold"
+      class="text-white-shadow font-testimonial text-left sm:pl-24 md:pl-32 text-3xl font-bold mb-2"
     >
       Work Experience
     </h3>
-    <Divider class="mb-8 mt-2" />
     <div class="flex flex-col gap-4 text-main">
       <div
         v-for="job in positions"
