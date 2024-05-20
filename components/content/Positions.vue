@@ -52,11 +52,11 @@ defineProps({
           </h4>
           <ul class="ml-4 mr-8 list-disc">
             <li
-              v-for="(blurb, index) in job.responsibilities"
+              v-for="(responsibility, index) in job.responsibilities"
               :key="index"
-              class="mb-4 font-medium"
+              class="mb-4 font-medium leading-5"
             >
-              {{ blurb }}
+              {{ responsibility }}
             </li>
           </ul>
         </div>
