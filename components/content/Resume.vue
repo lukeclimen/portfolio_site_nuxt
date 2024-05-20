@@ -5,8 +5,10 @@
     >
       <ContentSlot :use="$slots.title" />
     </h1>
-    <Divider class="mb-8 mt-2" />
+    <Divider class="mb-12 mt-2" />
     <ContentSlot :use="$slots.positions" />
+    <Divider class="mb-6 mt-2" />
+    <ContentSlot :use="$slots.education" />
   </section>
 </template>
 
