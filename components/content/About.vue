@@ -16,9 +16,6 @@
         </div>
       </div>
     </div>
-
-    <Divider class="my-8" />
-    <ContentSlot :use="$slots.experiences" />
     <Divider class="my-8" />
     <div class="flex flex-col gap-3">
       <div class="flex flex-row justify-between">
