@@ -6,9 +6,8 @@
       <ContentSlot :use="$slots.title" />
     </h1>
     <Divider class="mb-8 mt-2" />
+    <ContentSlot :use="$slots.positions" />
   </section>
 </template>
 
 <script setup lang="ts"></script>
-
-<style scoped></style>
