@@ -15,11 +15,11 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://canvas.hrcd.fr',
+    url: process.env.NUXT_SITE_URL || 'https://lukeclimenhage.com',
     identity: {
       type: 'Person',
     },
-    twitter: '@HugoRCD__',
+    twitter: '',
   },
 
   css: ['~/assets/style/main.css'],
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/sitemap.xml', '/', '/writing', '/projects', '/about', '/contact'],
+      routes: ['/sitemap.xml', '/', '/resume', '/about', '/contact'],
     },
   },
 
