@@ -10,7 +10,7 @@ export default defineEventHandler(async (event: H3Event) => {
     const { email, subject, message, phone, fullname } = body;
     return await resend.emails.send({
       from: "LC Website <DoNotReply@lukeclimenhage.com>",
-      to: ["personalsite+luke.climenhage@gmail.com"],
+      to: process.env.NUXT_PRIVATE_EMAIL_ADDRESS || "",
       subject: "New message from Portfolio Site Form",
       html: `
       <p>A new message has been sent from the portfolio site contact form.</p>
