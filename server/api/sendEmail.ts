@@ -9,17 +9,17 @@ export default defineEventHandler(async (event: H3Event) => {
     const body = (await readBody(event)) as ContactEmail
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
-      from: 'LC Website <DoNotReply@lukeclimenhgage.com>',
+      from: 'LC Website <DoNotReply@lukeclimenhage.com>',
       to: ['personal-site+luke.climenhage@gmail.com'],
       subject: 'Nouveau message de HR Folio',
       html: `
-      <p>Un nouveau message a été envoyé depuis le formulaire de contact de HR Folio.</p>
-      <p>Voici les détails du message :</p>
+      <p>A new message has been sent from the portfolio site contact form.</p>
+      <p>Here are the details of the message:</p>
       <ul>
-        <li>Nom : ${fullname}</li>
+        <li>Name : ${fullname}</li>
         <li>Email : ${email}</li>
-        <li>Téléphone : ${phone}</li>
-        <li>Sujet : ${subject}</li>
+        <li>Telephone : ${phone}</li>
+        <li>Subject : ${subject}</li>
         <li>Message : ${message}</li>
       </ul>
       `,
